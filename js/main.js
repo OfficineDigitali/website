@@ -71,8 +71,16 @@
 								$('#' + id + 'modal').modal('toggle');
 							});
 
+							$('a.inner').click(function (e) {
+								e.preventDefault();
+								var target = $(this).attr('href');
+								window.location.hash = target;
+								$('#' + target + 'modal').modal('toggle');
+								return false;
+							});
+
 							$('.modal').on('hide.bs.modal', function() {
-								window.location.hash = '';
+								window.location.hash = '_';
 							});
 
 							if (window.location.hash != '')

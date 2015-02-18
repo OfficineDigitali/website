@@ -84,7 +84,7 @@
 				<div class="intro clearfix row">
 					<hr />
 					<div class="col-md-8 col-md-offset-2">
-						<p><strong>Officine Digitali</strong> e' una cooperativa informatica, composta da persone con competenze diverse e complementari per coprire un ampio spettro di esigenze integrate e trasversali.</p>
+						<p><strong>Officine Digitali</strong> è una cooperativa informatica, composta da persone con competenze diverse e complementari per coprire un ampio spettro di esigenze integrate e trasversali.</p>
 						<p>Siamo a Torino e a Vercelli, ma collaboriamo con varie realtà distribuite. Lavoriamo soprattutto in ambiente <strong>GNU/Linux</strong> e con stack software liberi e opensource, per garantire affidabilità, personalizzazione, interoperabilità, bassi costi ed indipendenza.</p>
 						<p>Contattaci all'indirizzo <a href="mailto:info@officinedigitali.org">info@officinedigitali.org</a> per sottoporci una richiesta, un progetto o una idea.</p>
 					</div>
@@ -117,7 +117,7 @@
 						</div>
 						<hr />
 						<?php foreach($customers as $c): ?>
-						<img id="<?php echo $c ?>" src="img/<?php echo $c ?>.png" />
+						<img id="<?php echo $c ?>" src="img/customers/<?php echo $c ?>.png" />
 						<?php endforeach ?>
 					</div>
 
@@ -132,8 +132,8 @@
 
 					doColumn(
 						'sys',
-						"Setup e manutenzione di infrastrutture locali per uffici ed attività commerciali. La nostra soluzione LTSP permette di abbattere i costi hardware e software, snellire la gestione della rete e rendere più flessibile l'accesso ai tuoi dati.<br/><a href=\"/ufficiocentralizzato/\">Qui maggiori dettagli.</a>",
-						array ('triciclo', 'museoresistenza')
+						"Setup e manutenzione di infrastrutture locali per uffici ed attività commerciali. La nostra soluzione LTSP permette di abbattere i costi hardware e software, snellire la gestione della rete e rendere più flessibile l'accesso ai tuoi dati.<br/><a class=\"inner\" href=\"ufficiocentralizzato\">Qui maggiori dettagli.</a>",
+						array ('triciclo', 'archivioresistenza')
 					);
 
 					doColumn(
@@ -144,8 +144,8 @@
 
 					doColumn(
 						'net',
-						"Setup complessi di rete locale o geografica, reti wireless distribuite, hardening di strutture esistenti. La soluzione ZeroShell facilita la creazione di hotspot aperti al pubblico, anche con controllo accessi centralizzato.<br/><a href=\"/wirelesspubblico/\">Qui maggiori dettagli.</a>",
-						array ('wirelesscdq')
+						"Setup complessi di rete locale o geografica, reti wireless distribuite, hardening di strutture esistenti. La soluzione ZeroShell facilita la creazione di hotspot aperti al pubblico, anche con controllo accessi centralizzato.<br/><a class=\"inner\" href=\"wirelesspubblico\">Qui maggiori dettagli.</a>",
+						array ('cdq')
 					);
 
 					doColumn(
@@ -171,8 +171,8 @@
 		function doModal ($title, $name, $text, $link) {
 		?>
 
-		<div class="modal fade" id="<?php echo $name ?>modal" tabindex="-1" role="dialog" aria-labelledby="<?php echo $name ?>modal" aria-hidden="true">
-			<div class="modal-dialog">
+		<div class="modal fade bs-example-modal-lg" id="<?php echo $name ?>modal" tabindex="-1" role="dialog" aria-labelledby="<?php echo $name ?>modal" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Chiudi"><span aria-hidden="true">&times;</span></button>
@@ -181,10 +181,13 @@
 					<div class="modal-body">
 						<?php echo $text ?>
 
+						<?php if ($link != null): ?>
 						<p class="reference">
 							Riferimenti: <a href="<?php echo $link ?>"><?php echo $link ?></a>
 						</p>
+						<?php endif ?>
 					</div>
+					<p class="clearfix">&nbsp;</p>
 				</div>
 			</div>
 		</div>
@@ -192,11 +195,55 @@
 		<?php
 		}
 
+		/* ******************************************************************************************************
+			Contenuti
+		*/
+
+		doModal (
+			'Ufficio Centralizzato',
+			'ufficiocentralizzato',
+			"<img src=\"img/schemaltsp.png\" class=\"rfloating\">
+			<p>La soluzione LTSP prevede un radicale cambiamento di paradigma nell'allestimento della rete locale: non più numerosi computer da dover individualmente mantenere, riparare e su cui disperdere dati e documenti, ma un unico server su cui centralizzare potenza di calcolo ed informazioni.</p>
+			<p>Per le singole postazioni è possibile riutilizzare l'hardware già esistente o acquisire dispositivi a basso costo e basso consumo, tutti i programmi ed i documenti risiedono su un unico computer in rete locale su cui sono ospitate le sessioni attualmente aperte dai singoli operatori.</p>
+			<p>Ciò vuol dire:</p>
+			<ul>
+				<li>possibilità di accedere al proprio ambiente operativo da qualsiasi postazione collegata alla rete locale</li>
+				<li>possibilità di sostituire rapidamente ogni postazione fisica in caso di guasto, senza perdere nessun dato e nessun programma</li>
+				<li>possibilità di potenziare le capacità computazionali di tutto l'ufficio intervenendo su un'unico computer</li>
+				<li>forte riduzione dei costi, che si concentrano sul solo server</li>
+			</ul>
+			<p>Le possibili varianti sono infinite:</p>
+			<ul>
+				<li>server centrale ridondato, per garantire continuità operativa di tutto l'ufficio in qualsiasi condizione</li>
+				<li>storage dati ridondato, anche al di fuori della rete, per preservare i dati anche in caso di disastro</li>
+				<li>virtualizzazione e condivisione di altri sistemi operativi, per eseguire ogni genere di applicazione contenendo i costi delle licenze</li>
+				<li>indicizzazione centralizzata dei documenti, per poter sempre accedere rapidamente ad ogni informazione indipendentemente da chi, quando e dove la ha salvata</li>
+				<li>esposizione dei contenuti anche al di fuori della rete locale, per poter consultare i propri documenti ovunque ci si trovi ed in qualsiasi momento</li>
+			</ul>
+			<p><a href=\"mailto:info@officinedigitali.org\">Contattaci</a> per saperne di più e per un preventivo.</p>",
+			null
+		);
+
+		doModal (
+			'Wireless Pubblico',
+			'wirelesspubblico',
+			"<img src=\"img/schemawireless.png\" class=\"rfloating\">
+			<p>Per conciliare la sempre crescente richiesta di connettività wireless verso l'Internet del pubblico, e le esigenze di tutela e controllo di chi potrebbe e vorrebbe fornirla, la soluzione ZeroShell fornisce un rapido ed efficace compromesso.</p>
+			<p>Grazie al sistema di accesso distribuito ed alla gestione delle autorizzazioni centralizzata, è possibile fornire il proprio wireless pubblico, autenticato, in cui il medesimo account può essere registrato una sola volta (associandolo ad un numero di telefono) ed utilizzato presso tutti i punti della rete, anche se geograficamente distanti e distribuiti all'interno di un vasto territorio.</p>
+			<p>Ideale per reti di strutture pubbliche affiliate, come centri sportivi e palestre, locali e ristoranti della stessa catena, circoli dello stesso network.</p>
+			<p><a href=\"mailto:info@officinedigitali.org\">Contattaci</a> per saperne di più e per un preventivo.</p>",
+			null
+		);
+
+		/* ******************************************************************************************************
+			Clienti
+		*/
+
 		doModal (
 			'B-Play',
 			'bplay',
 			"<p>B-Play è una agenzia di comunicazione di Torino che si occupa di web, grafica ed interazione.</p>
-			<p>Capita di collaborare con loro, per dare supporto tecnico nell'implementazione di progetti più o meno complessi.</p>",
+			<p>Capita periodicamente di collaborare con loro, per dare supporto tecnico nell'implementazione di progetti più o meno complessi.</p>",
 			'http://www.b-play.com/'
 		);
 
@@ -206,6 +253,55 @@
 			"<p>Triciclo è una cooperativa di Torino dedita al riuso di oggetti ed al riciclo di rifiuti.</p>
 			<p>Gestiamo la loro infrastruttura informatica locale, basata su una rete LTSP costruita con PC da loro stessi recuperati e rimessi in opera.</p>",
 			'http://www.triciclo.com/'
+		);
+
+		doModal (
+			'Archivio Nazionale Cinematografico della Resistenza',
+			'archivioresistenza',
+			"<img src=\"img/photos/archivioresistenza.jpg\" class=\"rfloating\">
+			<p>L'Archivio Nazionale Cinematografico della Resistenza raccoglie ed indicizza materiale multimediale relativo alla Seconda Guerra Mondiale.</p>
+			<p>Presso la loro sede abbiamo riallestito l'intera rete locale dei PC destinati alla consultazione dei contenuti con una infrastruttura LTSP, rinnovando di fatto le modalità operative pur usando l'hardware pre-esistente.</p>",
+			'http://www.ancr.to.it/'
+		);
+
+		doModal (
+			'Carsh',
+			'carsh',
+			"<p>Carsh è una giovane startup milanese la cui app mobile aggrega diversi servizi di car sharing.</p>
+			<p>Ci siamo occupati della loro applicazione backend, implementata in PHP e resa più performante con l'ausilio di Redis.</p>",
+			'http://www.carsh.it/'
+		);
+
+		doModal (
+			'EFCCA',
+			'efcca',
+			"<p>La European Federation of Crohn's and Ulcerative Colitis Association (EFCCA) è una associazione europea con sede a Bruxelles, che coordina le associazioni nazionali europee dedicate al sostegno dei pazienti affetti da malattie all'intestino.</p>
+			<p>Collaboriamo occasionalmente per la loro piattaforma di sondaggi online, abbiamo implementato un tool per il tracking dei sintomi dei pazienti, e stiamo ora ridisegnando il loro sito web.</p>",
+			'http://efcca.org/'
+		);
+
+		doModal (
+			'Case del Quartiere',
+			'cdq',
+			"<p>La rete delle Case del Quartiere di Torino riunisce diversi spazi comuni e di aggregazione nella città di Torino.</p>
+			<p>Stiamo lavorando con loro per allestire una rete wireless distribuita nei vari spazi, con autenticazione centralizzata e condivisa.</p>",
+			'http://casedelquartieretorino.org/'
+		);
+
+		doModal (
+			'Carioca',
+			'carioca',
+			"<p>Carioca è il più celebre produttore di pennarelli in Italia, con sede a Settimo Torinese.</p>
+			<p>Abbiamo realizzato per loro alcuni video - soprattutto montati in time-lapse - durante l'allestimento di una nuova area produttiva.</p>",
+			'http://www.carioca.it/'
+		);
+
+		doModal (
+			'COVERFOP',
+			'coverfop',
+			"<p>Il Consorzio Vercellese Formazione Professionale è un ente accreditato presso la Regione Piemonte per l'erogazione di corsi professionali.</p>
+			<p>Da qualche anno partecipiamo come docenti al corso di formazione per Sistemisti di Rete, dal quale abbiamo anche recuperato alcune delle risorse operative attualmente in forze alla nostra cooperativa.</p>",
+			'http://www.coverfop.it/'
 		);
 
 		?>

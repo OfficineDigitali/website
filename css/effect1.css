@@ -311,3 +311,16 @@ section {
 .layout-switch .ip-header {
 	position: absolute;
 }
+
+.modal-header {
+	padding: 50px;
+	border-bottom: 1px solid #E2001A;
+}
+
+.modal-body {
+	padding: 50px;
+}
+
+.rfloating {
+	float: right;
+}
