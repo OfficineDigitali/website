@@ -117,7 +117,7 @@ section {
 .ip-main {
 	overflow: hidden;
 	margin: 0 auto;
-	padding: 170px 0 0 0;
+	padding-top: 170px;
 }
 
 .ip-main h2 {
@@ -139,8 +139,13 @@ section {
 }
 
 .descr {
-	height: 200px;
 	text-align: left;
+}
+
+@media (min-width: 768px) {
+	.descr {
+		height: 200px;
+	}
 }
 
 .title {

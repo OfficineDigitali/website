@@ -90,7 +90,7 @@
 					</div>
 				</div>
 				<div class="browser clearfix row">
-					<div class="box col-md-2">
+					<div class="box col-md-2 hidden-xs hidden-sm">
 						<h3>&nbsp;</h3>
 						<hr />
 						<div class="descr title">
@@ -115,10 +115,13 @@
 								<?php echo $text ?>
 							</p>
 						</div>
-						<hr />
-						<?php foreach($customers as $c): ?>
-						<img id="<?php echo $c ?>" src="img/customers/<?php echo $c ?>.png" />
-						<?php endforeach ?>
+
+						<div class="hidden-xs hidden-sm">
+							<hr />
+							<?php foreach($customers as $c): ?>
+							<img id="<?php echo $c ?>" src="img/customers/<?php echo $c ?>.png" />
+							<?php endforeach ?>
+						</div>
 					</div>
 
 					<?php
@@ -202,7 +205,7 @@
 		doModal (
 			'Ufficio Centralizzato',
 			'ufficiocentralizzato',
-			"<img src=\"img/schemaltsp.png\" class=\"rfloating\">
+			"<img src=\"img/schemaltsp.png\" class=\"img-responsive rfloating\">
 			<p>La soluzione LTSP prevede un radicale cambiamento di paradigma nell'allestimento della rete locale: non più numerosi computer da dover individualmente mantenere, riparare e su cui disperdere dati e documenti, ma un unico server su cui centralizzare potenza di calcolo ed informazioni.</p>
 			<p>Per le singole postazioni è possibile riutilizzare l'hardware già esistente o acquisire dispositivi a basso costo e basso consumo, tutti i programmi ed i documenti risiedono su un unico computer in rete locale su cui sono ospitate le sessioni attualmente aperte dai singoli operatori.</p>
 			<p>Ciò vuol dire:</p>
@@ -227,7 +230,7 @@
 		doModal (
 			'Wireless Pubblico',
 			'wirelesspubblico',
-			"<img src=\"img/schemawireless.png\" class=\"rfloating\">
+			"<img src=\"img/schemawireless.png\" class=\"img-responsive rfloating\">
 			<p>Per conciliare la sempre crescente richiesta di connettività wireless verso l'Internet del pubblico, e le esigenze di tutela e controllo di chi potrebbe e vorrebbe fornirla, la soluzione ZeroShell fornisce un rapido ed efficace compromesso.</p>
 			<p>Grazie al sistema di accesso distribuito ed alla gestione delle autorizzazioni centralizzata, è possibile fornire il proprio wireless pubblico, autenticato, in cui il medesimo account può essere registrato una sola volta (associandolo ad un numero di telefono) ed utilizzato presso tutti i punti della rete, anche se geograficamente distanti e distribuiti all'interno di un vasto territorio.</p>
 			<p>Ideale per reti di strutture pubbliche affiliate, come centri sportivi e palestre, locali e ristoranti della stessa catena, circoli dello stesso network.</p>
