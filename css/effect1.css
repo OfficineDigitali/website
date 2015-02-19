@@ -28,7 +28,7 @@
 body {
 	background: #FFF;
 	font-weight: 400;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-family: 'Raleway', Arial, sans-serif;
 	color: #7B7C7E;
 }
@@ -144,7 +144,7 @@ section {
 
 @media (min-width: 768px) {
 	.descr {
-		height: 200px;
+		height: 250px;
 	}
 }
 

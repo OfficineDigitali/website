@@ -261,8 +261,7 @@
 		doModal (
 			'Archivio Nazionale Cinematografico della Resistenza',
 			'archivioresistenza',
-			"<img src=\"img/photos/archivioresistenza.jpg\" class=\"rfloating\">
-			<p>L'Archivio Nazionale Cinematografico della Resistenza raccoglie ed indicizza materiale multimediale relativo alla Seconda Guerra Mondiale.</p>
+			"<p>L'Archivio Nazionale Cinematografico della Resistenza raccoglie ed indicizza materiale multimediale relativo alla Seconda Guerra Mondiale.</p>
 			<p>Presso la loro sede abbiamo riallestito l'intera rete locale dei PC destinati alla consultazione dei contenuti con una infrastruttura LTSP, rinnovando di fatto le modalità operative pur usando l'hardware pre-esistente.</p>",
 			'http://www.ancr.to.it/'
 		);
