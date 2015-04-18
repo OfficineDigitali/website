@@ -154,7 +154,7 @@
 					doColumn(
 						'etc',
 						"Formazione professionale, registrazione e streaming audio/video di eventi e convegni, piccole appliances embedded.",
-						array ('carioca', 'coverfop')
+						array ('fortechance', 'carioca', 'coverfop')
 					);
 
 					?>
@@ -246,7 +246,7 @@
 			'B-Play',
 			'bplay',
 			"<p>B-Play è una agenzia di comunicazione di Torino che si occupa di web, grafica ed interazione.</p>
-			<p>Capita periodicamente di collaborare con loro, per dare supporto tecnico nell'implementazione di progetti più o meno complessi.</p>",
+			<p>Capita periodicamente di collaborare con loro per dare supporto tecnico nell'implementazione di progetti più o meno complessi, dai temi Wordpress all'elaborazione video.</p>",
 			'http://www.b-play.com/'
 		);
 
@@ -288,6 +288,14 @@
 			"<p>La rete delle Case del Quartiere di Torino riunisce diversi spazi comuni e di aggregazione nella città di Torino.</p>
 			<p>Stiamo lavorando con loro per allestire una rete wireless distribuita nei vari spazi, con autenticazione centralizzata e condivisa.</p>",
 			'http://casedelquartieretorino.org/'
+		);
+
+		doModal (
+			'Forte Chance',
+			'fortechance',
+			"<p>Forte Chance è un ente di formazione con sede a Torino.</p>
+			<p>Capita di collaborare con loro per la realizzazione di corsi, soprattutto di programmazione.</p>",
+			'http://http://www.fortechance.it//'
 		);
 
 		doModal (
