@@ -130,7 +130,7 @@
 					doColumn(
 						'web',
 						"Dalla grafica all'hosting, dall'implementazione alle mail per il tuo dominio Internet personalizzato.",
-						array ('bplay')
+						array ('csa', 'bplay')
 					);
 
 					doColumn(
@@ -243,6 +243,14 @@
 		*/
 
 		doModal (
+			'Centro Piemontese di Studi Africani',
+			'csa',
+			"<p>Il Centro Piemontese di Studi Africani è un ente per la promozione dei rapporti culturali fra il Piemonte e l'Africa.</p>
+			<p>Per loro abbiamo implementato il sito per il convegno <a href=\"http://www.urbanafrica.it/\">\"L'Africa delle Città\"</a>.</p>",
+			'http://csapiemonte.it/'
+		);
+
+		doModal (
 			'B-Play',
 			'bplay',
 			"<p>B-Play è una agenzia di comunicazione di Torino che si occupa di web, grafica ed interazione.</p>
@@ -295,7 +303,7 @@
 			'fortechance',
 			"<p>Forte Chance è un ente di formazione con sede a Torino.</p>
 			<p>Capita di collaborare con loro per la realizzazione di corsi, soprattutto di programmazione.</p>",
-			'http://http://www.fortechance.it//'
+			'http://www.fortechance.it/'
 		);
 
 		doModal (
