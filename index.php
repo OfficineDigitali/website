@@ -10,6 +10,16 @@
 		<meta name="keywords" content="web, sys, dev, net, torino" />
 		<meta name="author" content="Officine Digitali" />
 
+		<meta property="og:site_name" content="Officine Digitali" />
+		<meta property="og:title" content="Officine Digitali" />
+		<meta property="og:url" content="http://www.officinedigitali.org/" />
+		<meta property="og:image" content="http://www.officinedigitali.org/img/fb.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:country-name" content="Italy" />
+		<meta property="og:email" content="info@officinedigitali.org" />
+		<meta property="og:locale" content="it_IT" />
+		<meta property="og:description" content="web|sys|dev|net|etc" />
+
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
