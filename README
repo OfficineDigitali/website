@@ -1,0 +1,6 @@
+Il sito è compilato staticamente con Jekyll
+http://jekyllrb.com/
+
+Si veda lo script build.sh per vedere il funzionamento.
+
+N.B.: tale script prevede la rimozione di tutti i files dalla cartella corrente, a parte jekyll-src e lo stesso build.sh. Usare con cautela.

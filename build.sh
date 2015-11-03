@@ -1,5 +1,12 @@
 #!/bin/sh
 
+host=`hostname`
+if [ "$host" = "hs1" ]
+then
+	echo "NON LANCIARE SUL SERVER DI PRODUZIONE"
+	exit
+fi
+
 for i in `ls | grep -v jekyll-src | grep -v build.sh`
 do
         rm -rf $i
