@@ -1,0 +1,100 @@
+[
+        {
+                "identifier": "web",
+                "description": "Dalla grafica all'hosting, dall'implementazione alle mail per il tuo dominio Internet personalizzato.",
+                "customers": [
+                        {
+                                "identifier": "csa",
+                                "name": "Centro Piemontese di Studi Africani",
+                                "website": "http://csapiemonte.it/",
+                                "description": "Il Centro Piemontese di Studi Africani è un ente per la promozione dei rapporti culturali fra il Piemonte e l'Africa."
+                        },
+                        {
+                                "identifier": "bplay",
+                                "name": "B-Play",
+                                "website": "http://www.b-play.com/",
+                                "description": "B-Play è una agenzia di comunicazione di Torino che si occupa di web, grafica ed interazione. Capita periodicamente di collaborare con loro per dare supporto tecnico nell'implementazione di progetti più o meno complessi, dai temi Wordpress alle piattaforme più evolute."
+                        }
+                ]
+        },
+        {
+                "identifier": "sys",
+                "description": "Setup e manutenzione di infrastrutture locali per uffici ed attività commerciali. La nostra soluzione LTSP permette di abbattere i costi hardware e software, snellire la gestione della rete e rendere più flessibile l'accesso ai tuoi dati.",
+                "extra": {
+                        "identifier": "ufficiocentralizzato",
+                        "text": "_texts/ufficiocentralizzato.html"
+                },
+                "customers": [
+                        {
+                                "identifier": "triciclo",
+                                "name": "Cooperativa Triciclo",
+                                "website": "http://www.triciclo.com/",
+                                "description": "Triciclo è una cooperativa di Torino dedita al riuso di oggetti ed al riciclo di rifiuti. Gestiamo la loro infrastruttura informatica locale, basata su una rete LTSP costruita con PC da loro stessi recuperati e rimessi in opera."
+                        },
+                        {
+                                "identifier": "archivioresistenza",
+                                "name": "Archivio Nazionale Cinematografico della Resistenza",
+                                "website": "http://www.ancr.to.it/",
+                                "description": "L'Archivio Nazionale Cinematografico della Resistenza raccoglie ed indicizza materiale multimediale relativo alla Seconda Guerra Mondiale. Presso la loro sede abbiamo riallestito l'intera rete locale dei PC destinati alla consultazione dei contenuti con una infrastruttura LTSP, rinnovando di fatto le modalità operative pur usando l'hardware pre-esistente."
+                        }
+                ]
+        },
+        {
+                "identifier": "dev",
+                "description": "Applicazioni web o desktop per la gestione avanzata e la pubblicazione di dati, personalizzazione e sviluppo di moduli per piattaforme opensource. PHP, Java, C, Python e Javascript.",
+                "customers": [
+                        {
+                                "identifier": "carsh",
+                                "name": "Carsh",
+                                "website": "http://www.carsh.it/",
+                                "description": "Carsh è una giovane startup milanese la cui app mobile aggrega diversi servizi di car sharing. Ci siamo occupati della loro applicazione backend, implementata in PHP e resa più performante con l'ausilio di Redis."
+                        },
+                        {
+                                "identifier": "efcca",
+                                "name": "EFCCA",
+                                "website": "http://efcca.org/",
+                                "description": "La European Federation of Crohn's and Ulcerative Colitis Association (EFCCA) è una associazione europea con sede a Bruxelles, che coordina le associazioni nazionali europee dedicate al sostegno dei pazienti affetti da malattie all'intestino. Collaboriamo occasionalmente per la loro piattaforma di sondaggi online, abbiamo implementato un tool per il tracking dei sintomi dei pazienti."
+                        }
+                ]
+        },
+        {
+                "identifier": "net",
+                "description": "Setup complessi di rete locale o geografica, reti wireless distribuite, hardening di strutture esistenti. La soluzione ZeroShell facilita la creazione di hotspot aperti al pubblico, anche con controllo accessi centralizzato.",
+                "extra": {
+                        "identifier": "wirelesspubblico",
+                        "text": "_texts/wirelesspubblico.html"
+                },
+                "customers": [
+                        {
+                                "identifier": "cdq",
+                                "name": "Case del Quartiere",
+                                "website": "http://casedelquartieretorino.org/",
+                                "description": "La rete delle Case del Quartiere di Torino riunisce diversi spazi comuni e di aggregazione nella città di Torino. Stiamo lavorando con loro per allestire una rete wireless distribuita nei vari spazi, con autenticazione centralizzata e condivisa."
+                        }
+                ]
+        },
+        {
+                "identifier": "etc",
+                "description": "Formazione professionale, registrazione e streaming audio/video di eventi e convegni, piccole appliances embedded.",
+                "customers": [
+                        {
+                                "identifier": "fortechance",
+                                "name": "Forte Chance",
+                                "website": "http://www.fortechance.it/",
+                                "description": "Forte Chance è un ente di formazione con sede a Torino. Capita di collaborare con loro per la realizzazione di corsi, soprattutto di programmazione."
+                        },
+                        {
+                                "identifier": "carioca",
+                                "name": "Carioca",
+                                "website": "http://www.carioca.it/",
+                                "description": "Carioca è il più celebre produttore di pennarelli in Italia, con sede a Settimo Torinese. Abbiamo realizzato per loro alcuni video - soprattutto montati in time-lapse - durante l'allestimento di una nuova area produttiva."
+                        },
+                        {
+                                "identifier": "coverfop",
+                                "name": "COVERFOP",
+                                "website": "http://www.coverfop.it/",
+                                "description": "Il Consorzio Vercellese Formazione Professionale è un ente accreditato presso la Regione Piemonte per l'erogazione di corsi professionali. Abbiamo partecipiamo come docenti al corso di formazione per Sistemisti di Rete, dal quale abbiamo anche recuperato alcune delle risorse operative attualmente in forze alla nostra cooperativa."
+                        }
+                ]
+        }
+]

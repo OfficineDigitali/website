@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="intro clearfix row">
+        <hr />
+        <div class="col-md-8 col-md-offset-2">
+                <p><strong>Officine Digitali</strong> è una cooperativa informatica, composta da persone con competenze diverse e complementari per coprire un ampio spettro di esigenze integrate e trasversali.</p>
+                <p>Siamo a Torino e a Vercelli, ma collaboriamo con varie realtà distribuite. Lavoriamo soprattutto in ambiente <strong>GNU/Linux</strong> e con stack software liberi e opensource, per garantire affidabilità, personalizzazione, interoperabilità, bassi costi ed indipendenza.</p>
+                <p>Contattaci all'indirizzo <a href="mailto:info@officinedigitali.org">info@officinedigitali.org</a> per sottoporci una richiesta, un progetto o una idea.</p>
+        </div>
+</div>
+<div class="browser clearfix row">
+        <div class="box col-md-2 hidden-xs hidden-sm">
+                <h3>&nbsp;</h3>
+                <hr />
+                <div class="descr title">
+                        Cosa Facciamo
+                </div>
+                <hr />
+                <div class="descr title">
+                        Clienti e Partners
+                </div>
+        </div>
+
+        {% for area in site.data.customers %}
+
+        <div class="box col-md-2 text-center">
+                <h3>{{ area.identifier }}</h3>
+                <hr />
+                <div class="descr">
+                        <p>
+                                {{ area.description }}
+
+                                {% if area.extra %}
+                                <p><a class="inner" href="{{ area.extra.identifier }}">Qui maggiori dettagli.</a></p>
+                                {% endif %}
+                        </p>
+                </div>
+
+                <div class="hidden-xs hidden-sm">
+                        <hr />
+                        {% for customer in area.customers %}
+                        <img id="{{ customer.identifier }}" src="img/customers/{{ customer.identifier }}.png" />
+                        {% endfor %}
+                </div>
+        </div>
+
+        {% endfor %}
+</div>
+
+{% for area in site.data.customers %}
+        {% for customer in area.customers %}
+
+        <div class="modal fade bs-example-modal-lg" id="{{ customer.identifier }}modal" tabindex="-1" role="dialog" aria-labelledby="{{ customer.identifier }}modal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Chiudi"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">{{ customer.name }}</h4>
+                                </div>
+                                <div class="modal-body">
+                                        {{ customer.description | replace: ".", ".<br/>" }}
+
+                                        <p class="reference">
+                                                Riferimenti: <a href="{{ customer.website }}">{{ customer.website }}</a>
+                                        </p>
+                                </div>
+                                <p class="clearfix">&nbsp;</p>
+                        </div>
+                </div>
+        </div>
+
+        {% endfor %}
+
+        {% if area.extra %}
+
+        <div class="modal fade bs-example-modal-lg" id="{{ area.extra.identifier }}modal" tabindex="-1" role="dialog" aria-labelledby="{{ area.extra.identifier }}modal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Chiudi"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">{{ area.extra.title }}</h4>
+                                </div>
+                                <div class="modal-body">
+                                        {% include_relative {{area.extra.text}} %}
+                                </div>
+                                <p class="clearfix">&nbsp;</p>
+                        </div>
+                </div>
+        </div>
+
+        {% endif %}
+{% endfor %}

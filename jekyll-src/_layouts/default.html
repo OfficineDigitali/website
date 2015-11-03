@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+        {% include head.html %}
+        <body>
+                <div id="ip-container" class="ip-container">
+                        {% include header.html %}
+                        <div class="ip-main container">
+                                {{ content }}
+                                {% include footer.html %}
+                        </div>
+                </div>
+                {% include js.html %}
+        </body>
+</html>
