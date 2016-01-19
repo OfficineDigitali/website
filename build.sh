@@ -7,7 +7,7 @@ then
 	exit
 fi
 
-for i in `ls | grep -v jekyll-src | grep -v build.sh`
+for i in `ls | grep -v jekyll-src | grep -v build.sh | grep -v README`
 do
         rm -rf $i
 done
