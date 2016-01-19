@@ -8,12 +8,6 @@
                                 "name": "Centro Piemontese di Studi Africani",
                                 "website": "http://csapiemonte.it/",
                                 "description": "Il Centro Piemontese di Studi Africani è un ente per la promozione dei rapporti culturali fra il Piemonte e l'Africa."
-                        },
-                        {
-                                "identifier": "bplay",
-                                "name": "B-Play",
-                                "website": "http://www.b-play.com/",
-                                "description": "B-Play è una agenzia di comunicazione di Torino che si occupa di web, grafica ed interazione. Capita periodicamente di collaborare con loro per dare supporto tecnico nell'implementazione di progetti più o meno complessi, dai temi Wordpress alle piattaforme più evolute."
                         }
                 ]
         },
@@ -25,6 +19,18 @@
                         "text": "_texts/ufficiocentralizzato.html"
                 },
                 "customers": [
+                	{
+                                "identifier": "vercelli",
+                                "name": "Città di Vercelli",
+                                "website": "http://www.comune.vercelli.it/",
+                                "description": "Capoluogo dell'omonima provincia piemontese, a tutti nota come capitale del riso. Per loro amministriamo alcuni servizi web, in particolare relativi alle attività per i giovani."
+                        },
+                	{
+                                "identifier": "fitel",
+                                "name": "Federazione Italiana Tempo Libero",
+                                "website": "http://fitelpiemonte.it/",
+                                "description": "La Federazione Italiana Tempo Libero è una associazione che raggruppa palestre, centri sportivi e varie attività turistiche. Forniamo supporto tecnico alla sede ed ai contenuti web della filiale piemontese."
+                        },
                         {
                                 "identifier": "triciclo",
                                 "name": "Cooperativa Triciclo",
@@ -43,11 +49,11 @@
                 "identifier": "dev",
                 "description": "Applicazioni web o desktop per la gestione avanzata e la pubblicazione di dati, personalizzazione e sviluppo di moduli per piattaforme opensource. PHP, Java, C, Python e Javascript.",
                 "customers": [
-                        {
-                                "identifier": "carsh",
-                                "name": "Carsh",
-                                "website": "http://www.carsh.it/",
-                                "description": "Carsh è una giovane startup milanese la cui app mobile aggrega diversi servizi di car sharing. Ci siamo occupati della loro applicazione backend, implementata in PHP e resa più performante con l'ausilio di Redis."
+			{
+                                "identifier": "bplay",
+                                "name": "B-Play",
+                                "website": "http://www.b-play.com/",
+                                "description": "B-Play è una agenzia di comunicazione di Torino che si occupa di web, grafica ed interazione. Capita periodicamente di collaborare con loro per dare supporto tecnico nell'implementazione di progetti più o meno complessi, dai temi Wordpress alle piattaforme più evolute."
                         },
                         {
                                 "identifier": "efcca",
